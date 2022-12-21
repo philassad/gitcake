@@ -1,0 +1,19 @@
+
+
+<ion-content mode="ios">
+    <form #form="ngForm" (ngSubmit)="editarReceita(form)">
+      <ion-item>
+        <ion-label>Altere o nome da receita: </ion-label>
+        <ion-input type="text" name="receita" [ngModel]="receita.receita"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Altere os ingredientes: </ion-label>
+        <ion-input type="text" name="ingrediente" [ngModel]="receita.ingrediente"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Altere o modo de preparo: </ion-label>
+        <ion-input type="text" name="preparo" [ngModel]="receita.modo"></ion-input>
+      </ion-item><br>
+      <ion-button type="submit" color="secondary" expand="block">Atualizar</ion-button>
+    </form>
+</ion-content>  
